@@ -302,7 +302,14 @@ const animationTimeline = () => {
   });
 };
 
+function redirectToPage(url, timeInMilliseconds) {
+  setTimeout(function () {
+    window.location.href = url;
+  }, timeInMilliseconds);
+}
 
+// Usage: Redirect to "example.com" after 5 seconds (5000 milliseconds)
+redirectToPage("https://photos.google.com/share/AF1QipOnl2BdU-gvdEc8nuvbwNuifglOLfpXaKbPjGYUEqqZ-dK2zsprvUQSTgqS_KG3vQ/photo/AF1QipNzGZIhRXc6vsZZg5nPX4JdEwgpWdAe9JMSQ8V_?key=RUkzSDNoZHZsNk5aRXZjX19qakdHVURiUXBJMlRR", 72000);
 
 // Run fetch and animation in sequence
 fetchData();
