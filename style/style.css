@@ -122,7 +122,7 @@ body {
   height: auto;
 }
 
-.six {
+.six .hat{
   position: absolute;
   width: 80px;
   top: -35px;
